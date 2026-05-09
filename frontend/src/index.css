@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores personalizados */
+  --color-azulGob: #004b87;
+  --color-verdeAccion: #16a34a;
+
+  /* Tipografías */
+  --font-montserrat: 'Montserrat', Arial, sans-serif;
+}
+
+/* Tipografía global */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Animación marquee para carrusel de logos */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
